@@ -27,7 +27,6 @@ const CustomerSchema = new mongoose.Schema({
   phone: { type: String, required: true },
   email: String,
   address: String,
-  dob: String,
   eyePrescription: EyePrescriptionSchema,
   visits: [{
     date: Date,

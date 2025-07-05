@@ -74,7 +74,7 @@ app.post("/api/login", async (req, res) => {
 // Create customer
 app.post("/api/customers", async (req, res) => {
   try {
-    const { userId, name, phone, email, address, dob, eyePrescription } = req.body;
+    const { userId, name, phone, email, address,  eyePrescription } = req.body;
 
     const newCustomer = new Customer({
       owner: userId,
@@ -82,7 +82,6 @@ app.post("/api/customers", async (req, res) => {
       phone,
       email,
       address,
-      dob,
       eyePrescription,
     });
 
